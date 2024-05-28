@@ -1,0 +1,235 @@
+body{
+    /* Margen predeterminado de las páginas web */
+    margin: 0;
+    /* Margen pa' dentro */
+    padding: 0;
+    /* Tamaño de fuente */
+    font-size: 12px;
+    /* Fuente de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************************************************************ */
+/* ************************************************************ */
+/* **************************NAVEGACION************************ */
+/* ************************************************************ */
+/* ************************************************************ */
+
+header{
+    /* width: anchura // height: altura */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    /* Mover mi nav hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar viñetas */
+    list-style: none;
+    width: 250px;
+    /* Hacemos el elemento flexible */
+    display: flex;
+    /* Centramos */
+    justify-content: space-between;
+    /* Centrado vertical */
+    align-items: center;
+    height: auto;
+}
+
+nav .nav-right-section a {
+    /* Quitar delineado // línea */
+    text-decoration: none;
+    /* Color de texto */
+    color: rgba(0, 0, 0, .87);
+}
+
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Tamaño de imagen de fondo -- contenida */
+    background-size: contain;
+}
+
+nav .nav-right-section img {
+    /* Margin - right // margen derecho y hacer espacio a la foto */
+    margin-right: 20px;
+    border-radius: 100%
+}
+
+/* ************************************************************ */
+/* ************************************************************ */
+/* *****************************MAIN*************************** */
+/* ************************************************************ */
+/* ************************************************************ */
+
+main {
+    /* Margin superior */
+    margin-top: 85px;
+    /* Centrar elementos */
+    text-align: center;
+}
+
+main .main-logo {
+    width: 500px;
+    /* PROPIEDAD : valor 1 valor 2 */
+    /* PROPIEDAD : vertical horizontal */
+    /* Centrar mi elemento */
+    margin: 0 auto;
+    /* top | right | bottom | left */
+    /* margin: 2px 1em 0 auto */
+    margin-bottom: 22px;
+}
+
+main .main-logo img {
+    height: 92px;
+}
+
+/* INPUT SECTION */
+main .main-input {
+    /* anchura */
+    width: 510px;
+    /* Centrar mi elemento */
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+main .main-input-container {
+    width: 500px;
+    /* BORDE DE COLOR: anchura de línea, estilo, color */
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+}
+
+main .main-input input {
+    height: 40px;
+    border: none;
+    outline: none;
+    width: 380px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 10%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+main .main-input-container:hover {
+    box-shadow: 2px 2px 2px 2px #20212447;
+    border-color: #dfe1e500;
+}
+
+/* MAIN BUTTONS SECTION */
+main .main-buttons {
+    /* anchura */
+    width: 550px;
+    /* Vertical ~ Horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    /* Alinear elementos en la misma línea */
+    display: inline;
+}
+
+main .main-buttons button {
+    /* Separación entre buscador y botones */
+    margin-top: 12px;
+    /* Eliminar borde negro -- NONE or 0px */
+    border: none;
+    height: 40px;
+    background-color: #f8f9fa;
+    /* Color de texto */
+    color: #3c4043;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /* Borde + oscuro al pasar mouse */
+    border: 1px solid #dadce0;
+    /* Sombra al pasar mouse */
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+footer{
+    margin-top: 255px;
+    width: 100%;
+    min-height: 3rem;
+    background:#f2f2f2;
+    color:var(--YLNNHc);
+}
+
+footer > * {
+    min-height: 3rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+footer .footer-location{
+    padding-left: 2rem;
+    border-bottom: 1px solid #dadce0;
+    font-size: 14px;
+    font-family: arial, sans-serif
+}
+
+footer .footer-nav {
+    padding-left: 1.5rem;
+    display: flex;
+}
+
+footer .footer-nav a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    padding: 15px;
+}
+
+footer .footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media (widht > 35rem) {
+    .footer-nav {
+        justify-content: space-between;
+        padding: 0.8rem 2.8rem;
+    }
+}
